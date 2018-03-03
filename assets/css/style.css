@@ -20,6 +20,25 @@ body {
 
 
 /* Slider & Code Snippet Section */
+.slider-section {
+    background-color: #172330;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.slider-section p {
+    color:#E8E8E8;
+}
+
+.blockquote-footer {
+    color: #AAAEBD;
+}
+
+.quote-padding {
+    padding-top: 400px;
+}
+
+
 .code-snippet-section {
     background-color: #1B2937;
     padding-top: 30px;
@@ -49,7 +68,7 @@ body {
     text-align: center;
 }
 
-.active {
+.code-snippet-section .active {
     color: #fff;
     background-color: #121822;
 }
