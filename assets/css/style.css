@@ -7,6 +7,7 @@ body {
     font-weight: 400;
     font-family: "Open Sans", "Helvetica", sans-serif;
     color: #AAAEBD;
+    background-color: #172330 !important;
 }
 
 /* Nav bar & Hero Section */
@@ -15,7 +16,87 @@ body {
 
 
 /* Text & Laptop Section */
-
+@media (min-width: 992px) {
+    .laptopBackground {
+        background-image: linear-gradient(to bottom, #172330 14%, #1B2937 14%);
+    }
+}
+@media (max-width: 991px) {
+    .laptopBackground {
+        background-color: #1B2937;
+    }
+    .btnGetStarted {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+.createImage {
+    display: block;
+    margin: 50px auto 0 auto;
+    height: 90px;
+}
+.shipImage {
+    display: block;
+    margin: 30px auto 0 auto;
+    height: 110px;
+}
+.improveImage {
+    display: block;
+    margin: 40px auto 20px  auto;
+    height: 80px;
+}
+.threeImageBackground {
+    background-color: #1B2937;
+}
+.listBackground {
+    background-color: #172330;
+}
+.imageCaptionHeader {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.imageCaption {
+    font-size: 1.125em;
+    color: #D3D4D7;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    line-height: 1.7;
+}
+li {
+    color: #5bc399;
+    font-size: 90%;
+}
+li p {
+    color: #AAAEBD;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    font-size: 100%;
+}
+.btnGetStarted {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    background-color: #5bc399;
+    border: none;
+    border-radius: 5px;
+    padding: 19px 21px 19px 21px;
+    width: 185px;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.btnGetStarted:focus {
+    outline: none;
+}
 /* Text & Laptop Section END */
 
 
