@@ -1,0 +1,10 @@
+body {
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Open Sans", "Helvetica", sans-serif;
+    color: #AAAEBD;
+    background:  url(../img/atomist-starry-night.jpg) no-repeat center top;
+    background-size: 100% auto;
+    background-color: #1B2937;
+}
