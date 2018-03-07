@@ -179,7 +179,197 @@
 
 
     <!--Slider & Code Snippet Section-->
+    <div class="slider-section">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+              <li data-target="#carousel" data-slide-to="3"></li>
+              <li data-target="#carousel" data-slide-to="4"></li>
+            </ol>
+            <div class="container">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <blockquote class="blockquote text-center">
+                      <p class="mb-0">Ensuring consistent provisioning and management of applications and infrastructure for a growing platform can be challenging.
+                          Atomist allows us to focus on what matters, writing valuable time saving automations that allow developers end to
+                          end visibility and control.</p>
+                          <br>
+                      <footer class="blockquote-footer"> Donovan Muller, Lead Technical Partner, Barclays Africa</footer>
+                    </blockquote>
+              </div>
+              <div class="carousel-item">
+                  <blockquote class="blockquote text-center">
+                      <p class="mb-0">Atomist has improved our globe-spanning team's daily workflow. It gives us a single interface to both monitor the change
+                        introduced by development as well a way to manage contributions from our community.</p>
+                      <br>
+                      <footer class="blockquote-footer"> Ben Hale, Pivotal, Cloud Foundry</footer>
+                    </blockquote>
+              </div>
+              <div class="carousel-item">
+                  <blockquote class="blockquote text-center">
+                      <p class="mb-0">Atomist has become a critical part (and member!) of our dev team. Allowing us to efficiently manage and monitor our
+                        development process.</p>
+                      <br>
+                      <footer class="blockquote-footer"> Brian Conneen, Chief Technology Officer, Marlette Funding</footer>
+                    </blockquote>
+              </div>
+              <div class="carousel-item">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">Atomist allows us to focus on improving our products instead of custom developer tools by making automation easy with
+                      actionable information available to all team members.</p>
+                    <br>
+                    <footer class="blockquote-footer"> Tapani Moilanen, Chief Architect, Kyyti</footer>
+                  </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote text-center">
+                  <p class="mb-0">We are excited to use Atomist in our team. The bridge it forms between multiple tools is an incredible asset that will
+                    allow us to speed up development and have happier developers in the meantime.</p>
+                  <br>
+                  <footer class="blockquote-footer"> Emma Wilson, nVidia</footer>
+                </blockquote>
+          </div>
+            </div>
+          </div>
+          <br>
+          <br>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
 
+    <div class="code-snippet-section">
+        <div class="container">
+            <h2 class="title-4">Simple, powerful, open source automation API</h2>
+            <p class="sub-text-4">Automate your development process, increase visibility.</p>
+            <br>
+            <div class="wrapper-4">
+            <ul class="nav justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">CREATE PROJECT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">UPDATE DEPENDENCIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">BOT COMMAND</a>
+              </li>
+            </ul>
+          </div>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="code">
+                    <br>
+                    <br>
+                    <p class="code-padding-a">@CommandHandler(<span class="code-string">"Kotlin Spring 5 generator"</span>,<span class="code-string"> "Generate a new spring Kotlin project"</span>)</p>
+                    <p class="code-padding-a"><span class="code-keyword">export class</span> <span class="code-title">KotlinSpring5</span> <span class="code-keyword">extends</span> <span class="code-title">JavaSeed</span> {</p>
+                    <br>
+                    <p class="code-padding-b">public projectEditor(ctx: HandlerContext, params: <span class="code-keyword">this</span>): ProjectEditor {</p>
+                    <p class="code-padding-c"><span class="code-keyword">return</span> transformSeed;</p>
+                    <p class="code-padding-b">}</p>
+                    
+                    <p class="code-padding-a">}</p>
+                    
+                    <p class="code-padding-a"><span class="code-keyword">const</span> transformSeed: ProjectEditor = (<span class="code-params">project: Project, ctx: HandlerContext, pars: KotlinSpring5</span>) => {</p>
+                    <p class="code-padding-b"><span class="code-keyword">const</span> artifact = camelize(pars.artifactId);</p>
+                    <p class="code-padding-b"><span class="code-keyword">const</span> appName = artifact.charAt(<span class="code-number">0</span>).toUpperCase() + artifact.substr(<span class="code-number">1</span>);</p>
+                    <p class="code-padding-b"><span class="code-keyword">const</span> smartArtifactId = (pars.artifactId === "${projectName}") ? project.name : pars.artifactId;</p>
+                    <p class="code-padding-b"><span class="code-keyword">return</span> updatePom(project, smartArtifactId, pars.groupId, pars.version, pars.description)</p>
+                    <p class="code-padding-c">.then(inferFromKotlinSource)</p>
+                    <p class="code-padding-c">.then(<span class="code-params">structure</span> => !!structure ?</p>
+                    <p class="code-padding-d">renameAppClass(project, structure, appName)</p>
+                    <p class="code-padding-e">.then(p => movePackage(<span class="code-params">p</span>, structure.applicationPackage, pars.rootPackage, AllKotlinFiles))</p>
+                    <p class="code-padding-d">: project);</p>
+                    <p class="code-padding-a">};</p>
+                    
+                    <p class="code-padding-a"><span class="code-keyword">function</span> <span class="code-title">renameAppClass</span>(<span class="code-params">project: Project, structure: SpringBootProjectStructure,</p>
+                    <p class="code-padding-f"><span class="code-params">appName: string</span>): <span class="code-title">Promise</span> {</p>
+                    <p class="code-padding-b"><span class="code-keyword">return</span> doWithFiles(project, AllKotlinFiles, f =></p>
+                    <p class="code-padding-c">f.replaceAll(structure.applicationClassStem, appName)</p>
+                    <p class="code-padding-d">.then(<span class="code-params">f</span> => f.path.includes(structure.applicationClassStem) ?</p>
+                    <p class="code-padding-e">f.setPath(f.path.replace(structure.applicationClassStem, appName)) :</p>
+                    <p class="code-padding-e">f</p>
+                    <p class="code-padding-d">)</p>
+                    <p class="code-padding-b">)</p>
+                    <p class="code-padding-a">}</p>
+                    <br>
+                    <br>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <div class="code">
+                    <br>
+                    <br>
+                    <p class="code-padding-a"><span class="code-keyword">@CommandHandler</span>(<span class="code-string">"Upgrade versions of Spring Boot across an org", "upgrade spring boot version"</span>)</p>
+                    <p class="code-padding-a">export <span class="code-keyword">class</span> <span class="code-title">SpringBootVersionUpgrade</span> <span class="code-keyword">extends</span> <span class="code-title">EditorCommandSupport</span> {</p>
+                  
+                    <p class="code-padding-b"><span class="code-keyword">@Secret</span>(Secrets.userToken([<span class="code-string">"repo"</span>,<span class="code-string"> "user"</span>]))</p>
+                    <p class="code-padding-b"><span class="code-keyword">protected</span> githubToken;</p>
+                  
+                    <p class="code-padding-b"><span class="code-keyword">@Parameter</span>({</p>
+                    <p class="code-padding-c">displayName: <span class="code-string">"Desired Spring Boot version"</span>,</p>
+                    <p class="code-padding-c">description: <span class="code-string">"The desired Spring Boot version across these repos"</span>,</p>
+                    <p class="code-padding-c">pattern: /^.+$/,</p>
+                    <p class="code-padding-c">validInput: <span class="code-string">"Semantic version"</span>,</p>
+                    <p class="code-padding-c">required: <span class="code-keyword">false</span>,</p>
+                    <p class="code-padding-b">})</p>
+                    <p class="code-padding-b"><span class="code-keyword">public</span> desiredBootVersion: string;</p>
+                  
+                    <p class="code-padding-b"><span class="code-keyword">public</span> <span class="code-title">projectEditor</span><span class="code-params">()</span>: ProjectEditor {</p>
+                    <p class="code-padding-c"><span class="code-keyword">return</span> setSpringBootVersionEditor(<span class="code-keyword">this</span>.desiredBootVersion);</p>
+                    <p class="code-padding-b">}</p>
+                  
+                    <p class="code-padding-b"><span class="code-keyword">public</span> <span class="code-title">editInfo</span><span class="code-params">(p: Project)</span>: EditMode {</p>
+                    <p class="code-padding-c"><span class="code-keyword">return new</span> PullRequest(<span class="code-string">"spring-boot-"</span> + <span class="code-keyword">this</span>.desiredBootVersion,</p>
+                    <p class="code-padding-d"><span class="code-string">"Upgrade Spring Boot to "</span> + <span class="code-keyword">this</span>.desiredBootVersion);</p>
+                    <p class="code-padding-b">}</p>
+                    <p class="code-padding-a">}</p>
+                  
+                    <p class="code-padding-a">export function <span class="code-title">setSpringBootVersionEditor</span><span class="code-params">(desiredBootVersion: string)</span>: AnyProjectEditor {</p>
+                    <p class="code-padding-b"><span class="code-keyword">return</span> p =></p>
+                    <p class="code-padding-c">doWithAtMostOneMatch(p, <span class="code-string">"pom.xml"</span>,</p>
+                    <p class="code-padding-d">parentStanzaOfGrammar(SpringBootStarter), m => {</p>
+                    <p class="code-padding-e"><span class="code-keyword">if</span> (m.version.value !== desiredBootVersion) {</p>
+                    <p class="code-padding-f1">m.version.value = desiredBootVersion;</p>
+                    <p class="code-padding-e">}</p>
+                    <p class="code-padding-d">});</p>
+                    <p class="code-padding-a">}</p>
+                    <br>
+                    <br>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="code">
+                    <br>
+                    <br>
+                    <p class="code-padding-a">@CommandHandler(<span class="code-string">"Query Stack Overflow"</span>,<span class="code-string"> "search so"</span>)</p>
+                    <p class="code-padding-a">@Tags(<span class="code-string">"stack-overflow"</span>)</p>
+                    <p class="code-padding-a"><span class="code-keyword">export class</span> <span class="code-title">SearchStackOverflow implements HandleCommand</span> {</p>
+                  
+                    <p class="code-padding-b">@Parameter({ description: <span class="code-keyword">"your search query"</span>, pattern: <span class="code-keyword">/^.*$/</span> })</p>
+                    <p class="code-padding-b">public q: string;</p>
+                  
+                    <p class="code-padding-b">public handle(ctx: HandlerContext): <span class="code-string">Promise</span> {</p>
+                    <p class="code-padding-c"><span class="code-keyword">return</span> axios.get(<span class="code-string">`${apiSearchUrl}${encodeURIComponent(</span><span class="code-params">this</span><span class="code-string">.q)}`</span>)</p>
+                    <p class="code-padding-d">.then(<span class="code-params">res</span> => <span class="code-keyword">this</span>.handleResult(res, <span class="code-keyword">this</span>.q))</p>
+                    <p class="code-padding-d">.then(<span class="code-params">msg</span> => <span class="code-keyword">return</span> ctx.messageClient.respond(msg) });</p>
+                    <p class="code-padding-b">}</p>
+                    <p class="code-padding-a">}</p>
+                    <br>
+                    <br>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
     <!--Slider & Code Snippet Section END-->
 
 
